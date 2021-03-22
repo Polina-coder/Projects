@@ -10,6 +10,7 @@ a:focus {
 html {
   background: #313940;
 }
+
 body {
   min-height: 100vh;
   background-color: #313940;
@@ -17,6 +18,7 @@ body {
   background: #313940;
   overflow-x: hidden;
 }
+
 .header {
   text-align: center;
   width: 100%;
@@ -29,6 +31,7 @@ body {
   font-weight: 300;
   color: #fff;
 }
+
 .main {
   min-height: calc(100vh - 110px);
   padding: 60px 10px 0;
@@ -40,6 +43,7 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 .btn-container {
   display: flex;
   justify-content: space-between;
@@ -48,6 +52,7 @@ body {
   margin: 0 auto;
   margin-bottom: 80px;
 }
+/* btn относится к двум верхним кнопкам  */
 .btn {
   width: 150px;
   height: 40px;
@@ -63,6 +68,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .btn:not(.btn-active):hover {
   background-color: #515961;
 }
@@ -75,6 +81,7 @@ body {
 .btn-active:hover {
   background-color: #00c9b7;
 }
+
 .piano {
   position: relative;
   display: flex;
@@ -94,9 +101,11 @@ body {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .piano-key:hover {
   background-color: #fff;
 }
+
 .keys-sharp {
   position: absolute;
   top: 0;
@@ -107,6 +116,7 @@ body {
   justify-content: space-between;
   pointer-events: none;
 }
+
 .piano-key.sharp {
   width: 54px;
   height: 170px;
@@ -119,6 +129,7 @@ body {
   transform-origin: center top;
   margin: 0px;
 }
+
 .piano-key.piano-key-active,
 .piano-key.sharp.piano-key-active {
   transform: scale(0.96);
@@ -150,7 +161,12 @@ body {
 }
 .piano-key:hover::before,
 .piano-key:hover::after {
-  color: #d7dfe6;
+  color: #d78;
+}
+
+.piano-key.sharp:hover::before,
+.piano-key.sharp:hover::after {
+  color: #d78;
 }
 
 .piano-key-active:hover::before,
@@ -167,6 +183,7 @@ body {
   bottom: 175px;
   left: 7px;
 }
+
 .piano-key.letter::before {
   display: none;
 }
@@ -289,6 +306,7 @@ body {
     border-radius: 0px 0px 8px 8px;
     border: 2px solid #313940;
   }
+
   .keys-sharp {
     left: 26px;
     right: 26px;
@@ -321,4 +339,17 @@ body {
     width: 120px;
     height: 40px;
   }
+}
+.activated {
+  background-color: red !important;
+}
+
+.piano-key.activated:hover::before,
+.piano-key:hover::after {
+  color: red;
+}
+
+.piano-key.sharp.activated:hover::before,
+.piano-key.sharp:hover::after {
+  color: red;
 }
