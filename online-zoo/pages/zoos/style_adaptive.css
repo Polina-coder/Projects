@@ -1,0 +1,271 @@
+@media screen and (max-width:1600px) and (min-width: 1200px) {
+    .container {
+        overflow-x: hidden;
+        z-index: 3;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .container-aside {
+        overflow-x: hidden;
+        z-index: 3;
+        max-width: 1200px;
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header__logo{
+        margin-left:76px;
+    
+    }
+    .header__menu {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        margin-top: 11px;
+        margin-right:0px;
+    }
+    .menu__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .menu__item {
+        margin-left: 33px;
+    }
+    .menu__link {
+        font-family: Montserrat;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        text-transform: uppercase;
+        color: #000;
+        min-width: 121px;
+        height: 27px;
+    }
+    .menu__link_active {
+    color: #00a092;
+    cursor: default;
+    pointer-events: none;
+    }
+    .menu__link:not(.menu__link_active):hover {
+        cursor: pointer;
+        color: #05e1cf;
+    }
+    .socials__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right:80px;
+    margin-top:12px;
+    }
+    .socials__item {
+        margin-left: 30px;
+    }
+    .socials__item_c {
+        margin-left: 0;
+    }
+.animal__header-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.animal__title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 66px;
+    text-transform: uppercase;
+    color: #00a092;
+    margin-left:-478px;
+   /* margin-top:-45px;*/
+}
+.animal {
+    z-index: 3;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+.panel {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    width: 213px;
+    height: 846px;
+    background-color: #20113d;
+}
+.panel__header {
+    position: relative;
+    height: 80px;
+    border-bottom: 1px solid #fff;
+}
+.panel__badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 113px;
+    height: 38px;
+    background-color: #f58021;
+    border-radius: 0 0 5px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.panel__badge span {
+    margin-right: 10px;
+}
+.panel__badge svg {
+    width: 20px;
+    height: 20px;
+}
+.panel__btn-right {
+    position: absolute;
+    background-color: transparent;
+    left: 167px;
+    top: 30px;
+}
+.panel__btn-right svg {
+    width: 16px;
+    height: 15px;
+}
+.panel__btn-down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.panel__item {
+    position: relative;
+    height: 172px;
+    width: 213px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    padding-top: 35px auto;
+    --in: #f58021;
+    --out: transparent;
+}
+.panel__item:hover .tooltips-zoos {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.panel__item:hover:not(.panel__item_active) {
+    --in: #ffa860;
+}
+.panel__item:active:not(.panel__item_active) {
+    --in: #ffa860;
+}
+.panel__item svg {
+    width: 121px;
+    height: 121px;
+    position: relative;
+}
+.panel__item .panel__img {
+    width: 121px;
+    height: 109px;
+}
+.panel__item .panel__img_1 {
+    background: url(assets/svg/animals/regular/Panda_2.png) 0 0 no-repeat;
+}
+.panel__item .panel__img_2 {
+    background: url(assets/svg/animals/regular/Lemur_2.svg) 0 0 no-repeat;
+}
+.panel__item .panel__img_3 {
+    background: url(assets/svg/animals/regular/Gorilla_2.png) 0 0 no-repeat;
+}
+.panel__item .panel__img_4 {
+    background: url(assets/svg/animals/regular/Eagle_2.svg) 0 0 no-repeat;
+}
+.panel__item_active {
+    padding-top: 25px auto;
+    --in: #fff;
+    --out: #fff;
+}
+.panel__item_active .panel__img {
+    width: 121px;
+    height: 121px;
+}
+.panel__item_active .panel__img_1 {
+    background: url(svg/animals/active/panda-active.svg) 0 0 no-repeat;
+}
+.panel__item_active .panel__img_2 {
+    background: url(svg/animals/active/lemur-active.svg) 0 0 no-repeat;
+}
+.panel__item_active .panel__img_3 {
+    background: url(svg/animals/active/gorilla-active.svg) 0 0 no-repeat;
+}
+.panel__item_active .panel__img_4 {
+    background: url(assets/svg/animals/active/Eagle-active_2.png) 0 0 no-repeat;
+}
+.panel__footer {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.panel__footer button {
+    background-color: transparent;
+}
+.panel__footer button svg {
+    width: 15px;
+    height: 9px;
+    fill: #fff;
+}
+    }

@@ -1,166 +1,24 @@
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../../assets/fonts/montserrat-v15-latin-regular.eot);
-    src: local(""), url(../../assets/fonts/montserrat-v15-latin-regular.eot?#iefix) format("embedded-opentype"),
-        url(../../assets/fonts/montserrat-v15-latin-regular.woff2) format("woff2"),
-        url(../../assets/fonts/montserrat-v15-latin-regular.woff) format("woff"),
-        url(../../assets/fonts/montserrat-v15-latin-regular.ttf) format("truetype"),
-        url(../../assets/fonts/montserrat-v15-latin-regular.svg#Montserrat) format("svg");
-}
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    src: url(../../assets/fonts/montserrat-v15-latin-500.eot);
-    src: local(""), url(../../assets/fonts/montserrat-v15-latin-500.eot?#iefix) format("embedded-opentype"),
-        url(../../assets/fonts/montserrat-v15-latin-500.woff2) format("woff2"),
-        url(../../assets/fonts/montserrat-v15-latin-500.woff) format("woff"),
-        url(../../assets/fonts/montserrat-v15-latin-500.ttf) format("truetype"),
-        url(../../assets/fonts/montserrat-v15-latin-500.svg#Montserrat) format("svg");
-}
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    src: url(../../assets/fonts/montserrat-v15-latin-600.eot);
-    src: local(""), url(../../assets/fonts/montserrat-v15-latin-600.eot?#iefix) format("embedded-opentype"),
-        url(../../assets/fonts/montserrat-v15-latin-600.woff2) format("woff2"),
-        url(../../assets/fonts/montserrat-v15-latin-600.woff) format("woff"),
-        url(../../assets/fonts/montserrat-v15-latin-600.ttf) format("truetype"),
-        url(../../assets/fonts/montserrat-v15-latin-600.svg#Montserrat) format("svg");
-}
-@font-face {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../../assets/fonts/montserrat-v15-latin-800.eot);
-    src: local(""), url(../../assets/fonts/montserrat-v15-latin-800.eot?#iefix) format("embedded-opentype"),
-        url(../../assets/fonts/montserrat-v15-latin-800.woff2) format("woff2"),
-        url(../../assets/fonts/montserrat-v15-latin-800.woff) format("woff"),
-        url(../../assets/fonts/montserrat-v15-latin-800.ttf) format("truetype"),
-        url(../../assets/fonts/montserrat-v15-latin-800.svg#Montserrat) format("svg");
-}
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-*,
-:after,
-:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-:active,
-:focus {
-    outline: 0;
-}
-a:active,
-a:focus {
-    outline: 0;
-}
-aside,
-footer,
-header,
-nav,
-section {
-    display: block;
-}
-body,
-html {
-    height: 100%;
-    min-width: 320px;
-}
-body {
-    line-height: 1;
-    font-size: 14px;
-    font-family: Montserrat;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-button,
-input,
-textarea {
-    font-family: Montserrat;
-}
-input::-ms-clear {
-    display: none;
-}
-button {
-    cursor: pointer;
-}
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-a,
-a:visited {
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: none;
-}
-ul li {
-    list-style: none;
-}
-img {
-    vertical-align: top;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-body {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #e5e5e5;
-    font-size: 14px;
-}
-body.lock {
-    overflow: hidden;
-}
+@media screen and (max-width:1600px) and (min-width: 1200px) {
 .container {
-    max-width: 1420px;
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.header {
-    z-index: 3;
-    width: 100%;
-    background: #f58021;
-}
-.header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    height: 110px;
+    max-width: 1200px;
 }
 .header__logo {
     display: block;
+    position: absolute;
+    width: 96px;
+    height: 50px;
+    left: 100px;
+    top: 30px;
+    }
+.header__menu {
+  
+position: absolute;
+width: 580px;
+height: 27px;
+margin-left: 300px;
+top: 46px;
+
+ 
 }
 .header__menu {
     -webkit-box-flex: 1;
@@ -172,7 +30,6 @@ body.lock {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    padding-right: 67px;
 }
 .menu__list {
     display: -webkit-box;
@@ -186,7 +43,7 @@ body.lock {
     justify-content: center;
 }
 .menu__item {
-    margin-left: 48px;
+    margin-left: 30px;
 }
 .menu__link {
     font-family: Montserrat;
@@ -205,59 +62,40 @@ body.lock {
     cursor: pointer;
     color: #05e1cf;
 }
-.map__container {
-    padding-top: 40px;
-    padding-bottom: 150px;
+.socials__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
-.map__title {
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 66px;
-    text-align: center;
-    text-transform: uppercase;
-    max-width: 600px;
-    margin: 0 auto 70px;
+.socials__item {
+    margin-left: 30px;
+    margin-top:10px;
 }
-.item {
-    position: relative;
-    right: 5px;
+.socials__item_c {
+    margin-left: 819px;
+
 }
-.item__tooltip {
-    position: fixed;
-    padding: 20px;
-    border-radius: 4px;
-    text-align: center;
-    color: #20113d;
-    background: #fff;
-    font-size: 18px;
-    text-align: left;
-}
-.item__tooltip::before {
-    content: "";
-    position: absolute;
-    left: 20px;
-    top: -40px;
-    border: 20px solid transparent;
-    border-bottom: 20px solid #fff;
-}
-.item__animal {
-    position: absolute;
-    width: 140px;
-    height: 184px;
-    -webkit-filter: drop-shadow(0 4px 30px rgba(245, 128, 33, 0.7));
-    filter: drop-shadow(0 4px 30px rgba(245, 128, 33, 0.7));
-}
-.item__animal > * {
-    z-index: 3;
+.map_svg{
+position: absolute;
+width: 1198px;
+height: 777px;
+margin-top:-60px;
+margin-left:-16px;
 }
 .item__animal_1 {
     background: url(assets/animals/eagle.svg) 0 0 no-repeat;
-    left: 144px;
-    top: 390px;
+    margin-left: -60px;
+    margin-top: -160px;
 }
 .item__animal_1:hover {
     cursor: pointer;
-    background: url(assets/animals/eagle-hover.svg) 0 0 no-repeat;
+    background: url(assets/animals/aeagle-hover.svg) 0 0 no-repeat;
     width: 160px;
     height: 204px;
     -webkit-filter: drop-shadow(0 4px 30px rgba(245, 128, 33, 0.7));
@@ -268,13 +106,13 @@ body.lock {
 }
 .item__animal_2 {
     background: url(assets/animals/coala.svg) 0 0 no-repeat;
-    top: 605px;
-    left: 1120px;
+    top: 425px;
+    left: 928px;
 }
 .item__animal_3 {
     background: url(assets/animals/panda.svg) 0 0 no-repeat;
-    top: 330px;
-    left: 928px;
+    top: 170px;
+    left: 808px;
 }
 .item__animal_3:hover {
     background: url(assets/animals/panda-hover.svg) 0 0 no-repeat;
@@ -288,11 +126,11 @@ body.lock {
 }
 .item__animal_4 {
     background: url(assets/animals/gorilla.svg) 0 0 no-repeat;
-    top: 460px;
-    left: 666px;
+    top: 310px;
+    left: 536px;
 }
 .item__animal_4:hover {
-    background: url(assets/animals/gorilla-hover.svg) 0 0 no-repeat;
+    background: url(assets/animals/gorilla.svg) 0 0 no-repeat;
     width: 160px;
     height: 204px;
     -webkit-filter: drop-shadow(0 4px 30px rgba(245, 128, 33, 0.7));
@@ -303,12 +141,12 @@ body.lock {
 }
 .item__animal_5 {
     background: url(assets/animals/tiger.svg) 0 0 no-repeat;
-    top: 490px;
-    left: 990px;
+    top: 345px;
+    left: 811px;
 }
 .item__animal_6 {
-    top: 580px;
-    left: 770px;
+    top: 409px;
+    left: 630px;
     background: url(assets/animals/lemur.svg) 0 0 no-repeat;
 }
 .item__animal_6:hover {
@@ -322,16 +160,26 @@ body.lock {
     transform: translate(-10px, -17px);
 }
 .item__animal_7 {
-    top: 390px;
-    left: 270px;
+    top: 252px;
+    left: 200px;
     background: url(assets/animals/alligator.svg) 0 0 no-repeat;
 }
 .item__animal_8 {
     background: url(assets/animals/lion.svg) 0 0 no-repeat;
-    top: 435px;
-    left: 550px;
+    top: 275px;
+    left: 440px;
+}
+.map__title {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 66px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin-top:-10px;
 }
 .footer {
+  margin-top:675px;
     padding-top: 65px;
     padding-bottom: 40px;
     background-color: #20113d;
@@ -379,6 +227,8 @@ body.lock {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    margin-left:15px;
+
 }
 .footer__icons > * {
     height: 50px;
@@ -388,27 +238,32 @@ body.lock {
     height: 50px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain;  
 }
 .footer__icon > * {
     height: 50px;
+
 }
 .footer__icon_1 {
     width: 96px;
     fill: #fff;
+    margin-top:7px;
+
+   
 }
 .footer__icon_1 svg {
     width: 96px;
 }
 .footer__icon_2 {
     width: 50px;
-    margin: 0 65px;
     background: url(../../assets/icons/footer/Yem-Digital.svg) 0 0 no-repeat;
+    margin-left:30px;
 }
 .footer__icon_3 {
     width: 138px;
     height: 51px;
     background: url(../../assets/icons/footer/rs-school-logo.svg) 0 0 no-repeat;
+    margin-left:-33px;
 }
 .footer__menu {
     -webkit-box-flex: 1;
@@ -425,10 +280,12 @@ body.lock {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
 }
 .footer__menu li {
     font-weight: 600;
-    margin-right: 46px;
+    margin-right: 21px;
+    margin-top:17px;
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
@@ -450,7 +307,6 @@ body.lock {
 .footer__btn {
     margin: 0 auto;
     position: relative;
-    padding: 25px 31px 26px 31px;
     border-radius: 5px;
     background-color: transparent;
     font-weight: 600;
@@ -473,6 +329,8 @@ body.lock {
     -ms-flex-pack: center;
     justify-content: center;
     word-spacing: 1px;
+    margin-right:11px;
+    margin-top:4px;
 }
 .footer__btn svg {
     width: 25.5px;
@@ -509,7 +367,9 @@ body.lock {
 .footer__copy ul li {
     font-size: 18px;
     line-height: 150%;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
+    margin-left:14px;
+
 }
 .footer__copy ul li:last-child {
     margin-right: 0;
@@ -518,7 +378,9 @@ body.lock {
     color: #fff;
 }
 .footer__socials .socials__item {
-    margin-left: 38px;
+    margin-left: 49px;
+   /* margin-right:10px;
+    margin-top:7px;*/
 }
 .ibg {
     background-repeat: no-repeat;
@@ -548,10 +410,12 @@ body.lock {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+     /*margin-left: 790px;*/
 }
 .socials__item {
-    margin-left: 30px;
+    margin-right: 0px;
 }
 .socials__item_c {
-    margin-left: 0;
+    margin-right: 0;
+}
 }
